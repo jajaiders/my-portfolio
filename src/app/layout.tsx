@@ -8,14 +8,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <header>
-        <Navbar />
-      </header>
-      <body>{children}</body>
-      <footer>
-        <Footer />
-      </footer>
+    <html lang="es">
+      <body>
+        <header>
+          <Navbar />
+        </header>
+        {children}
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }
